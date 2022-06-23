@@ -1,5 +1,6 @@
-package com.ipiecoles.java.java350.model;
+package com.ipiecoles.java.java350.model.model;
 
+import com.ipiecoles.java.java350.model.Employe;
 import org.junit.jupiter.api.Test;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -46,8 +47,10 @@ public class employeTest {
     @CsvSource({
             "'M12345',0,1,1.0,1700.0",
             "'M12345',0,0,1.0,1700.0",
+            "'M12345',0,2,1.0,1700.0",
             "'T12345',0,1,1.0,1000.0",
             "'T12345',0,0,1.0,300.0",
+            "'0',0,0,1.0,300.0",
     })
     public void testGetPrimeAnnuelle(String matricule,
                                      Integer nbAnneesAnciennete,
